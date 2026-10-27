@@ -6,6 +6,7 @@
     [
     {
         "name": "Git Bash",
+        "terminal": true,
         "command": ["{{ PREFIX }}/Library/bin/bash.exe", "--login", "-i", "--"],
         "description": "Bash Shell",
         "icon": "{{ MENU_DIR }}/git-for-windows.ico",
