@@ -1,13 +1,13 @@
 {
-    "menu_name": "${DISTRIBUTION_NAME}",
+    "$schema": "https://schemas.conda.org/menuinst/menuinst-1-1-3.schema.json",
+    "menu_name": "{{ DISTRIBUTION_NAME }}",
     "menu_items":
     [
     {
         "name": "Git Bash",
-        "command": ["${PREFIX}/Library/bin/bash.exe", "--login", "-i", "--"],
+        "command": ["{{ PREFIX }}/Library/bin/bash.exe", "--login", "-i", "--"],
         "description": "Bash Shell",
-        "working_dir": "${PERSONALDIR}",
-        "icon": "${MENU_DIR}/git-for-windows.ico",
+        "icon": "{{ MENU_DIR }}/git-for-windows.ico",
         "platforms": {
           "win": {}
         }
